@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js 예제</title>
+</head>
+<body>
+  <script>
+     const queue = {};
+     let front = 0;
+     let rear = 0;
+
+    // 데이터 추가 (Enqueue)
+    function enqueue(data) {
+      queue[rear] = data;
+      rear++;
+    }
+
+    // 데이터 제거 (Dequeue)
+    function dequeue() {
+      if (front === rear) {
+        console.log("삭제할 데이터가 없습니다")
+        return;
+      } else {
+        let frontValue = queue[front];
+        delete queue[front];
+        front++;
+        console.log(`${frontValue}가(이) 삭제되었습니다`)
+      }
+    }
+
+    // 가장 앞 데이터 확인 (Peek)
+    function peek() {
+      if(front === rear) {
+        console.log("저장된 데이터가 없습니다");
+      } else {
+        console.log(`가장앞에 있는 index의 번호는 ${queue[front]}입니다`)
+      }
+
+    }
+
+    // 큐가 비어있는지 확인 (IsEmpty)
+    function isEmpty() {
+      if(front === rear) {
+        console.log("저장된 데이터가 없습니다");
+        return true;
+      } else {
+        console.log(`${rear - front}개의 데이터가 있습니다`);
+        return false;
+      }
+    }
+
+    enqueue("사과");
+    enqueue("포도");
+    enqueue("딸기");
+    dequeue();
+    console.log(queue);
+    peek();
+    isEmpty();
+    enqueue("레몬");
+    enqueue("망고");
+    dequeue();
+    console.log(queue);
+    
+    
+  </script>
+</body>
+</html>
