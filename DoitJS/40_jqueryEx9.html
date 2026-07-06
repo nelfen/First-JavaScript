@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="JS/jquery-1.12.4.min.js"></script>
+    <title>jqueryEx9</title>
+  </head>
+  <body>
+    <script>
+      $(function () {
+        $("a[href^='https']").css({ "font-weight": "bold" });
+
+        $("a[href$='.net']").css({ "background-color": "#f0f" });
+      });
+    </script>
+    <h1>속성 선택자 - 시작과 끝</h1>
+    <p><a href="https://naver.com">보안 연결 (https)</a></p>
+    <p><a href="http://example.net">넷 도메인 (.net)</a></p>
+  </body>
+</html>
