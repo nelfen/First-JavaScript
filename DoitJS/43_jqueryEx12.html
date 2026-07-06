@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="JS/jquery-1.12.4.min.js"></script>
+    <title>jqueryEx12</title>
+  </head>
+  <body>
+    <script>
+      $(function () {
+        // 현재 체크박스나 라디오 버튼 중 체크(checked)되어 있는 요소의 부모(label) 스타일 변경
+        $("input:checked")
+          .parent()
+          .css({ color: "red", "font-weight": "bold" });
+      });
+    </script>
+    <h1>폼 선택자 - 체크 상태</h1>
+    <form>
+      <label
+        ><input type="checkbox" name="hobby" value="game" checked /> 게임</label
+      >
+      <label><input type="checkbox" name="hobby" value="movie" /> 영화</label>
+    </form>
+  </body>
+</html>
