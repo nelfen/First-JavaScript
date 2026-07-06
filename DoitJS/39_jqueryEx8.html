@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="JS/jquery-1.12.4.min.js"></script>
+    <title>jqueryEx8</title>
+  </head>
+  <body>
+    <script>
+      $(function () {
+        $("a[href='https://google.com']").css({ color: "red" });
+
+        $("a[href*='nate']").css({ "background-color": "#0ff" });
+      });
+    </script>
+    <h1>속성 선택자 - 값 비교</h1>
+    <p><a href="https://google.com">구글 바로가기</a></p>
+    <p><a href="https://nate.com/news">네이트 뉴스</a></p>
+  </body>
+</html>
