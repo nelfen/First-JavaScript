@@ -1,11 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>jqueryEx5</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="JS/jquery-1.12.4.min.js"></script>
+    <title>jqueryEx5</title>
+  </head>
+  <body>
+    <script>
+      $(function () {
+        $("#list1 li:not(.skip)").css({ "background-color": "#ff0" });
+
+        $("#list1 li:nth-child(2)").css({ "font-weight": "bold" });
+      });
+    </script>
+    <h1>탐색 선택자 - 제외 및 순서</h1>
+    <ul id="list1">
+      <li>내용1</li>
+      <li class="skip">내용2 (제외 대상)</li>
+      <li>내용3</li>
+      <li>내용4</li>
+    </ul>
+  </body>
 </html>
