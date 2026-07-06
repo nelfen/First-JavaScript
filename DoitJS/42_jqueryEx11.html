@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="JS/jquery-1.12.4.min.js"></script>
+    <title>jqueryEx11</title>
+  </head>
+  <body>
+    <script>
+      $(function () {
+        // td 태그 중 텍스트나 자식 요소가 아무것도 없는 빈 칸만 선택
+        $("td:empty").css({ "background-color": "#f00" });
+      });
+    </script>
+    <h1>콘텐츠 선택자 - 빈 요소</h1>
+    <table border="1" width="200">
+      <tr>
+        <td>데이터1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>데이터2</td>
+      </tr>
+    </table>
+  </body>
+</html>
