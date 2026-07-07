@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="JS/jquery-1.12.4.min.js"></script>
+    <title>jqueryEx15</title>
+  </head>
+  <body>
+    <script>
+      $(function () {
+        $("span").parent().css({ border: "1px solid red" });
+
+        $("span").parents(".main-box").css({ "background-color": "#ff0" });
+      });
+    </script>
+    <h1>트리 탐색 - 부모 및 조상</h1>
+    <div class="main-box" style="padding: 10px">
+      <div>
+        <p>텍스트 안의 <span>강조 영역</span>입니다.</p>
+      </div>
+    </div>
+  </body>
+</html>
