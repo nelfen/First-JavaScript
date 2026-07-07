@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="JS/jquery-1.12.4.min.js"></script>
+    <title>jqueryEx14</title>
+  </head>
+  <body>
+    <script>
+      $(function () {
+        $(".start").next().css({ color: "blue" });
+
+        $(".start").siblings().css({ "background-color": "#eee" });
+      });
+    </script>
+    <h1>트리 탐색 - 형제 요소</h1>
+    <ul>
+      <li>내용1</li>
+      <li class="start">내용2 (기준)</li>
+      <li>내용3 (next)</li>
+      <li>내용4</li>
+    </ul>
+  </body>
+</html>
