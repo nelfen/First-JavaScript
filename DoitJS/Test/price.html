@@ -1,0 +1,50 @@
+<style>
+  .pricing-wrapper {
+    width: 280px;
+  }
+  .price-card {
+    display: inline-block;
+    width: 120px;
+    border: 1px solid #222;
+    padding: 10px;
+    text-align: center;
+    vertical-align: bottom;
+  }
+  .price-card.recommend {
+    border: 2px solid blue;
+    background-color: #f0f4ff;
+    padding-top: 20px; /* 추천 요금제만 억지로 길게 만듦 */
+    padding-bottom: 20px;
+  }
+  .plan-title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .plan-price {
+    font-size: 16px;
+    color: red;
+    margin: 10px 0;
+  }
+  .plan-btn {
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #333;
+    color: #fff;
+    font-size: 11px;
+    text-decoration: none;
+  }
+</style>
+
+<div class="pricing-wrapper">
+  <div class="price-card">
+    <div class="plan-title">기본형</div>
+    <div class="plan-price">월 5,000원</div>
+    <a href="#" class="plan-btn">신청하기</a>
+  </div>
+
+  <div class="price-card recommend">
+    <div class="plan-title">프리미엄</div>
+    <div class="plan-price">월 9,900원</div>
+    <a href="#" class="plan-btn" style="background-color: blue">신청하기</a>
+  </div>
+</div>
