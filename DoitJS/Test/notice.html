@@ -1,0 +1,51 @@
+<style>
+  .tab-menu {
+    width: 250px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .tab-item {
+    float: left;
+    width: 80px;
+    height: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  .tab-item.active {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
+    height: 31px;
+  }
+  .tab-clear {
+    clear: both;
+  }
+  .tab-content {
+    width: 238px;
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 5px;
+    font-size: 12px;
+  }
+</style>
+
+<div>
+  <ul class="tab-menu">
+    <li class="tab-item active">공지사항</li>
+    <li class="tab-item">자유게시판</li>
+    <li class="tab-item">Q&A</li>
+  </ul>
+  <div class="tab-clear"></div>
+  <div class="tab-content">
+    <ul>
+      <li>[필독] 서버 점검 안내 (07/10)</li>
+      <li>[이벤트] 출석 체크 보상 지급</li>
+    </ul>
+  </div>
+</div>
