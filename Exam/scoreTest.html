@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>scoreTest</title>
+  </head>
+  <body>
+    <script>
+      var score = prompt("점수를 입력하세요", "0");
+      var result;
+
+      if (score >= 60) {
+        result = "합격입니다!";
+      } else {
+        result = "불합격입니다.";
+      }
+
+      document.write("당신의 점수: " + score + "점<br>");
+      document.write("결과: " + result + "<br>");
+    </script>
+  </body>
+</html>
