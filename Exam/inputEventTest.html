@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inputEventTest</title>
+  </head>
+  <body>
+    <input type="text" id="userName" placeholder="이름을 입력하세요" />
+    <button onclick="greet()">확인</button>
+    <p id="result"></p>
+
+    <script>
+      function greet() {
+        var nameInput = document.getElementById("userName");
+        var resultArea = document.getElementById("result");
+
+        if (nameInput.value.trim() === "") {
+          alert("이름을 입력해 주세요!");
+          return;
+        }
+
+        resultArea.innerText = nameInput.value + "님, 환영합니다!";
+        nameInput.value = "";
+      }
+    </script>
+  </body>
+</html>
