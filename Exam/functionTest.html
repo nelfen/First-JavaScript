@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>functionTest</title>
+  </head>
+  <body>
+    <script>
+      function multiply(a, b) {
+        return a * b;
+      }
+
+      var num1 = prompt("첫 번째 숫자를 입력하세요", "0");
+      var num2 = prompt("두 번째 숫자를 입력하세요", "0");
+
+      var result = multiply(Number(num1), Number(num2));
+
+      document.write(num1 + " x " + num2 + " = " + result + "<br>");
+    </script>
+  </body>
+</html>
