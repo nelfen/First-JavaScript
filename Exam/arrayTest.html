@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>arrayTest</title>
+  </head>
+  <body>
+    <script>
+      var fruits = ["사과", "바나나", "복숭아", "딸기", "포도"];
+
+      document.write("<h3>과일 목록 (총 " + fruits.length + "개)</h3>");
+      document.write("<ul>");
+
+      for (var i = 0; i < fruits.length; i++) {
+        document.write("<li>" + (i + 1) + "번째 과일: " + fruits[i] + "</li>");
+      }
+
+      document.write("</ul>");
+    </script>
+  </body>
+</html>
