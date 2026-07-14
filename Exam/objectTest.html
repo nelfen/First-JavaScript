@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>objectTest</title>
+  </head>
+  <body>
+    <script>
+      // 1. 현재 날짜 정보 출력
+      var today = new Date();
+      var year = today.getFullYear();
+      var month = today.getMonth() + 1;
+      var date = today.getDate();
+
+      document.write("오늘 날짜: " + year + "년 " + month + "월 " + date + "일<br>");
+
+      // 2. 1~10 사이의 임의의 난수 생성
+      var randomNum = Math.floor(Math.random() * 10) + 1;
+      document.write("오늘의 행운의 숫자: " + randomNum + "<br>");
+    </script>
+  </body>
+</html>
